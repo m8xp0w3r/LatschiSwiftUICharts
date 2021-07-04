@@ -13,7 +13,7 @@ public struct LatschiBarChartView: View {
     public var multiplier: CGFloat
     public var data: [LatschiChartData]
     
-    init(label: String, data: [LatschiChartData], multiplier: CGFloat = 10) {
+    public init(label: String, data: [LatschiChartData], multiplier: CGFloat = 10) {
         self.label = label
         self.data = data
         self.multiplier = multiplier
