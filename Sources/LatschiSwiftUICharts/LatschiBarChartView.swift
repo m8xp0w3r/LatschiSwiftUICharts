@@ -39,7 +39,7 @@ public struct LatschiBarChartView: View {
 struct LatschiBarChartView_Previews: PreviewProvider {
     
     static var previews: some View {
-        LatschiBarChartView(data: getData(), label: "Test")
+        LatschiBarChartView(data: getData(), label: "Test", multiplier: CGFloat(15))
     }
     
     static func getData() -> [LatschiChartData] {

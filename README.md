@@ -24,4 +24,6 @@ Choose branch `main` for the latest features as long as this still is in some ki
 * You can add a  label (defaults to an empty string) to the chart.
 * You can add a multiplier (defaults to 10) to the chart for a better illustration of your data (11, 14 an 19 look better than 1.1, 1.4 and 1.9).
 
+For a demo have a look at the `LatschiBarChartView_Previews`.
+
 
