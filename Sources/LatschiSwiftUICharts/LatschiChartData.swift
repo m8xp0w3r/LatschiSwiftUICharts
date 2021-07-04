@@ -10,13 +10,22 @@ import SwiftUI
 @available(iOS 13.0, *)
 public struct LatschiChartData: Identifiable {
     public let id = UUID()
-    var label: String
     var value: Double
+    var label: String = ""
     var color = Color.blue
     
-    public init(label: String, value: Double) {
+    public init(value: Double) {
+        self.value = value
+    }
+    
+    public init(value: Double, label: String) {
         self.label = label
         self.value = value
+    }
+    
+    public init(value: Double, color: Color) {
+        self.label = label
+        self.color = color
     }
     
     public init(label: String, value: Double, color: Color) {
