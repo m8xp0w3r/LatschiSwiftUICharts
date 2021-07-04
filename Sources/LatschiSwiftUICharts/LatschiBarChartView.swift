@@ -1,5 +1,5 @@
 //
-//  LatschiLineChartView.swift
+//  LatschiBarChartView.swift
 //
 //  Created by m8xp0w3r on 04.07.21.
 //
@@ -25,21 +25,8 @@ public struct LatschiBarChartView: View {
             Text(label)
             ScrollView(.horizontal) {
                 HStack {
-                    ForEach(data) { entry in
-                        VStack {
-                            Spacer()
-                            Text("\(entry.value, specifier: "%.1f") ")
-                                .font(.footnote)
-                                .rotationEffect(.degrees(-90))
-                                .offset(y: entry.value < 2.4 ? 0 : 35)
-                                .zIndex(1)
-                            RoundedRectangle(cornerRadius: 20)
-                                .fill(entry.color)
-                                .frame(width: 20, height: CGFloat(entry.value) * multiplier)
-                                .onTapGesture {
-                                    label = entry.label
-                                }
-                        }
+                    ForEach(data) { latschiChartData in
+                        LatschiBarChartRow(latschiChartData: latschiChartData, label: $label, multiplier: multiplier)
                     }
                 }
                 .padding()
