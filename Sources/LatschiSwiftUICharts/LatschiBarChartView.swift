@@ -9,11 +9,11 @@ import SwiftUI
 @available(iOS 13.0.0, *)
 @available(macOS 10.15.0, *)
 public struct LatschiBarChartView: View {
-    @State var label: String
     public var multiplier: CGFloat
+    @State var label: String
     public var data: [LatschiChartData]
     
-    public init(label: String, data: [LatschiChartData], multiplier: CGFloat = 10) {
+    public init(data: [LatschiChartData], label: String = "", multiplier: CGFloat = 10) {
         self.label = label
         self.data = data
         self.multiplier = multiplier
@@ -39,7 +39,7 @@ public struct LatschiBarChartView: View {
 struct LatschiBarChartView_Previews: PreviewProvider {
     
     static var previews: some View {
-        LatschiBarChartView(label: "Test", data: getData())
+        LatschiBarChartView(data: getData(), label: "Test")
     }
     
     static func getData() -> [LatschiChartData] {
