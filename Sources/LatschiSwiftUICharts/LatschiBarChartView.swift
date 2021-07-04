@@ -8,7 +8,7 @@ import SwiftUI
 
 @available(iOS 13.0.0, *)
 @available(macOS 10.15.0, *)
-struct LatschiBarChartView: View {
+public struct LatschiBarChartView: View {
     @State var label: String
     public var multiplier: CGFloat
     public var data: [LatschiChartData]
@@ -19,7 +19,7 @@ struct LatschiBarChartView: View {
         self.multiplier = multiplier
     }
     
-    var body: some View {
+    public var body: some View {
         VStack {
             Spacer()
             Text(label)

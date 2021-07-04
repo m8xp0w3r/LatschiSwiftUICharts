@@ -8,8 +8,8 @@ import Foundation
 import SwiftUI
 
 @available(iOS 13.0, *)
-struct LatschiChartData: Identifiable {
-    let id = UUID()
+public struct LatschiChartData: Identifiable {
+    public let id = UUID()
     var label: String
     var value: Double
     var color = Color.blue
