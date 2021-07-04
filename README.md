@@ -21,6 +21,8 @@ Choose branch `main` for the latest features as long as this still is in some ki
 
 ### BarChart
 
+<img width="309" alt="image" src="https://user-images.githubusercontent.com/38067181/124401809-de6dc480-dd2b-11eb-82e1-ab2562878bc1.png">
+
 * You can add a  label (defaults to an empty string) to the chart.
 * You can add a multiplier (defaults to 10) to the chart for a better illustration of your data (11, 14 an 19 look better than 1.1, 1.4 and 1.9).
 
