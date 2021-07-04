@@ -13,4 +13,15 @@ public struct LatschiChartData: Identifiable {
     var label: String
     var value: Double
     var color = Color.blue
+    
+    public init(label: String, value: Double) {
+        self.label = label
+        self.value = value
+    }
+    
+    public init(label: String, value: Double, color: Color) {
+        self.label = label
+        self.value = value
+        self.color = color
+    }
 }
