@@ -32,4 +32,8 @@ It is mandatory to pass a `Double` value. You also can pass an optional label (d
 
 For a demo have a look at the `LatschiBarChartView_Previews`.
 
+## Author
+Nils Leistner: djlatscho@gmail.com
 
+## License
+SwiftUICharts is available under the MIT license. See the LICENSE file for more info.
