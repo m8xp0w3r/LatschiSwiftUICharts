@@ -24,7 +24,7 @@ public struct LatschiChartData: Identifiable {
     }
     
     public init(value: Double, color: Color) {
-        self.label = label
+        self.value = value
         self.color = color
     }
     
